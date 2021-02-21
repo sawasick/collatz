@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<title>コラッツ予想実験</title>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+
+	<body>
+		<h1 class="title text-xlarge">〜コラッツ予想が検証できるサイト〜</h1>
+		<div class="disc-wrapper">
+			<p>コラッツ予想とは...</p>
+			<p>3n+1問題とも呼ばれる有名な未解決問題の一つです。簡単に説明すると、</p>
+			<p>
+				<span>正の整数nに対して、偶数なら2で割る。奇数なら3倍して1足す。</span>
+			</p>
+			<p>
+				以上の操作を繰り返すと、いつかは必ず1になる(はず！)と言うものです。詳しくは
+				<a
+					href="https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%A9%E3%83%83%E3%83%84%E3%81%AE%E5%95%8F%E9%A1%8C"
+					>wikipedia</a
+				>を見てみてください。
+			</p>
+			<p>
+				当サイトではそれを検証できるものです。(検証結果の保証はできません...)
+			</p>
+		</div>
+		<form action="#" id="js-form" class="form-wrapper">
+			<textarea
+				id="js-input"
+				class="auto-resize form-textarea"
+				placeholder="正の整数を入力してください(半角数字じゃないとエラーになります)"
+			></textarea>
+			<input type="button" id="js-run" class="form-btn" value="実行" />
+			<input type="button" id="js-delete" class="form-btn" value="履歴削除" />
+			<input type="button" id="js-random" class="form-btn" value="乱数生成" />
+		</form>
+		<div id="js-result-wrapper" class="result-wrapper"></div>
+		<footer class="footer">
+			<p class="footer-text text-small">@2021 sawasick studio</p>
+		</footer>
+		<script type="text/javascript" src="js/jquery-3.5.1.min.js" defer></script>
+		<script type="text/javascript" src="js/main.js" defer></script>
+	</body>
+</html>

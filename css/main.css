@@ -1,0 +1,111 @@
+html,
+body {
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	padding: 0 2%;
+	height: 100vh;
+	position: relative;
+}
+.title {
+	text-align: center;
+	margin-top: 0;
+}
+.disc-wrapper p {
+	margin: 0 0 0 4%;
+}
+.disc-wrapper p:first-child {
+	margin: 0;
+}
+.disc-wrapper span {
+	background-color: rgba(255, 255, 0, 0.7);
+}
+.form-wrapper {
+	width: 100%;
+	padding-top: 2vh;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.form-wrapper * {
+	margin-right: 2%;
+}
+
+.form-textarea {
+	width: calc(70% - 2px);
+	padding: 0;
+}
+.form-btn {
+	width: 8%;
+}
+.form-btn:last-child {
+	margin-right: 0;
+}
+.result-wrapper {
+	margin-top: 5%;
+}
+.more {
+	cursor: pointer;
+	background-color: rgba(0, 255, 255, 0.7);
+	display: inline-block;
+}
+.progress {
+	margin: 0;
+}
+.text-highlight {
+	color: #ff0000;
+}
+.disp--none {
+	display: none;
+}
+.error-message {
+	color: #ff0000;
+	font-weight: bold;
+	width: 100%;
+	margin: 0;
+}
+.footer {
+	position: absolute;
+	width: 96%;
+	height: 3vh;
+	bottom: 0;
+}
+.footer-text {
+	position: absolute;
+	margin: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+}
+.text-small {
+	font-size: 90% !important;
+}
+.text-large {
+	font-size: 120% !important;
+}
+
+/* メディアクエリ */
+@media screen and (max-width: 620px) {
+	.form-wrapper {
+		justify-content: space-around;
+	}
+	.form-wrapper * {
+		margin-right: 0;
+	}
+
+	.form-textarea {
+		width: 100%;
+	}
+	.form-btn {
+		width: 30%;
+		margin-top: 2%;
+	}
+	.text-xlarge {
+		font-size: 130% !important;
+	}
+}
